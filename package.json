@@ -2,8 +2,7 @@
   "name": "radiscope-graphql-poc",
   "version": "0.0.1",
   "description": "A poc project to test how graphQL works on server, and how to interact with it on a client app",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/radiscope/radiscope-graphql-poc.git"
@@ -15,8 +14,22 @@
   "author": "Jonatan Salas <jonatansalas@live.com.ar>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.4",
+    "flexboxgrid": "^6.3.1",
+    "graphql": "^0.7.0",
+    "material-ui": "^0.15.4",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-flexbox-grid": "^0.10.2",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^1.0.0",
+    "sequelize": "^3.24.3"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.13.0",
+    "classnames": "^2.2.5"
   },
   "engines": {
     "node": ">=6"
