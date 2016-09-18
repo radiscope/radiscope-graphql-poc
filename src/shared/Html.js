@@ -1,9 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 class Html extends Component {
     render() {
-        const { cssPath, jsPath } = this.props;
-
         return (
             <html>
                 <head>
@@ -16,20 +14,15 @@ class Html extends Component {
                     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"/>
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-                    <link rel="stylesheet" href={cssPath}/>
                 </head>
                 <body>
                     <div id="content"/>
-                    <script src={jsPath} type="text/javascript" rel="script" charSet="UTF-8"/>
+                    <script src="dist/vendor.js" type="text/javascript"/>
+                    <script src="dist/app.js" type="text/javascript"/>
                 </body>
             </html>
         );
     }
 }
-
-Html.propTypes = {
-    cssPath: PropTypes.string,
-    jsPath: PropTypes.string
-};
 
 export default Html;

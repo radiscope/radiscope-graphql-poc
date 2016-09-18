@@ -5,7 +5,8 @@
   "scripts": {
     "env:dev": "cross-env NODE_ENV=development",
     "build:dev": "babel-node ./src/server/index.js",
-    "start:dev": "npm run env:dev && npm run build:dev"
+    "webpack:dev": "cross-env BABEL_DISABLE_CACHE=1 webpack --config ./devtools/webpack.config.dev.js",
+    "start:dev": "npm run env:dev && npm run webpack:dev && npm run build:dev"
   },
   "repository": {
     "type": "git",
