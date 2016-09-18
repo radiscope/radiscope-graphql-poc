@@ -14,9 +14,9 @@ module.exports = {
     },
 
     output: {
-        path: __dirname,
-        filename: '../dist/app.js',
-        publicPath: 'http://0.0.0.0:8080/',
+        path: "/",
+        filename: 'app.js',
+        publicPath: '/',
     },
 
     resolve: {
@@ -62,7 +62,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             minChunks: Infinity,
-            filename: '../dist/vendor.js',
+            filename: 'vendor.js',
         }),
         new webpack.DefinePlugin({
             'process.env': {

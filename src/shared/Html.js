@@ -17,8 +17,8 @@ class Html extends Component {
                 </head>
                 <body>
                     <div id="content"/>
-                    <script src="dist/vendor.js" type="text/javascript"/>
-                    <script src="dist/app.js" type="text/javascript"/>
+                    <script src="vendor.js" type="text/javascript"/>
+                    <script src="app.js" type="text/javascript"/>
                 </body>
             </html>
         );
